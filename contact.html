@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Service Request — Plumbing Services Enquiry Demo</title>
+  <meta name="description" content="Submit a simulated plumbing service enquiry for leak repairs, drain cleaning, or installations. Front-end demonstration form.">
+  <meta name="keywords" content="Plumbing Service Request, Contact Plumber, Plumbing Enquiry, Leak Repair Quote, Drain Cleaning Booking">
+  
+  <meta property="og:title" content="Plumbing Services — Contact &amp; Service Request">
+  <meta property="og:description" content="Structured plumbing service enquiry demonstration form with real-time front-end validation.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Demo Advisory Banner -->
+  <aside class="demo-banner-top" aria-label="Demo Notice">
+    <div class="container">
+      <div class="demo-banner-text">
+        <span class="demo-dot" aria-hidden="true"></span>
+        <span><strong>DEMO WEBSITE:</strong> Generic illustrative concept for plumbing contractors. No real business is represented.</span>
+      </div>
+      <div class="demo-phone-badge">
+        <span>Demo Helpline:</span>
+        <a href="tel:0000000000">0000000000</a>
+        <span class="badge badge-demo">Illustrative</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Plumbing Services Home">
+        <svg class="logo-symbol" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="#142B45" />
+          <path d="M24 9C24 9 15 19.5 15 26.5C15 31.7 19.03 36 24 36C28.97 36 33 31.7 33 26.5C33 19.5 24 9 24 9Z" fill="#2585C5"/>
+          <path d="M24 14C24 14 18 21.5 18 26C18 29.5 20.69 32.5 24 32.5C27.31 32.5 30 29.5 30 26C30 21.5 24 14 24 14Z" fill="#35C6D9"/>
+          <rect x="22" y="23" width="4" height="9" rx="1.5" fill="#142B45"/>
+          <circle cx="24" cy="22" r="4.5" fill="#142B45"/>
+          <circle cx="24" cy="22" r="2" fill="#35C6D9"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">PLUMBING SERVICES</span>
+          <span class="brand-sub">Professional Solutions</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true">
+            <span>Pages</span>
+            <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="about.html" class="dropdown-item" role="menuitem">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </div>
+              <div class="dropdown-item-content">
+                <span class="dropdown-item-title">About Us</span>
+                <span class="dropdown-item-desc">Our approach, principles &amp; team</span>
+              </div>
+            </a>
+            <a href="projects.html" class="dropdown-item" role="menuitem">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              </div>
+              <div class="dropdown-item-content">
+                <span class="dropdown-item-title">Our Work</span>
+                <span class="dropdown-item-desc">Project showcase &amp; gallery</span>
+              </div>
+            </a>
+            <a href="emergency.html" class="dropdown-item dropdown-item-emergency" role="menuitem">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </div>
+              <div class="dropdown-item-content">
+                <span class="dropdown-item-title">Emergency Plumbing</span>
+                <span class="dropdown-item-desc">Urgent issues &amp; safety guide</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Request a Plumber</a>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="section section-sm section-bg">
+      <div class="container text-center reveal">
+        <span class="badge badge-blue">Online Service Enquiry</span>
+        <h1>LET'S GET YOUR PLUMBING SERVICE REQUEST STARTED.</h1>
+        <p class="lead" style="max-width: 720px; margin: 0.8rem auto 0;">
+          Describe your plumbing issue or installation requirement. Submit a request to explore the typical service enquiry experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Form & Contact Information Layout -->
+    <section class="section">
+      <div class="container">
+        
+        <!-- Emergency Advisory Banner -->
+        <div class="disclaimer-card reveal" style="border-left-color: #D32F2F; background-color: #FFF5F5; margin-bottom: 2.5rem;">
+          <h4 style="color: #C62828; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            IMPORTANT NOTICE FOR URGENT PLUMBING EMERGENCIES:
+          </h4>
+          <p style="color: #7F1D1D;">
+            This website is a demonstration portal. Urgent plumbing emergencies (such as burst mains, severe flooding, or structural collapse) should NOT rely on this demo form. For simulated safety steps, view our <a href="emergency.html" style="text-decoration: underline; font-weight: 700; color: #B71C1C;">Emergency Plumbing Guide</a>.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          
+          <!-- Left: Service Request Form -->
+          <div class="form-card reveal">
+            <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Plumbing Service Request Form</h2>
+            <p style="font-size: 0.9rem; margin-bottom: 1.75rem;">
+              Please complete all required fields. This form processes inputs locally in your browser for demonstration.
+            </p>
+
+            <form id="service-request-form" novalidate>
+              
+              <!-- Customer Details Section -->
+              <h3 style="font-size: 1.05rem; margin-bottom: 1rem; color: var(--plumbing-blue); border-bottom: 1px solid var(--gray-200); padding-bottom: 0.4rem;">
+                1. Customer Contact Details
+              </h3>
+
+              <div class="form-group-grid">
+                <div class="form-group">
+                  <label for="full-name" class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" id="full-name" class="form-control" placeholder="e.g. John Anderson" required>
+                  <div class="form-error-msg">Please enter your full name (minimum 2 characters).</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone-number" class="form-label">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="phone-number" class="form-control" placeholder="e.g. 9876543210" required>
+                  <div class="form-error-msg">Please enter a valid phone number.</div>
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="email-address" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email-address" class="form-control" placeholder="e.g. customer@example.com" required>
+                  <div class="form-error-msg">Please enter a valid email address.</div>
+                </div>
+              </div>
+
+              <!-- Service Details Section -->
+              <h3 style="font-size: 1.05rem; margin: 1.5rem 0 1rem; color: var(--plumbing-blue); border-bottom: 1px solid var(--gray-200); padding-bottom: 0.4rem;">
+                2. Service &amp; Property Information
+              </h3>
+
+              <div class="form-group-grid">
+                <!-- Service Required -->
+                <div class="form-group">
+                  <label for="service-type" class="form-label">Service Required <span class="required">*</span></label>
+                  <select id="service-type" class="form-control" required>
+                    <option value="">Select Service...</option>
+                    <option value="Leak Repair">Leak Repair</option>
+                    <option value="Drain Cleaning">Drain Cleaning</option>
+                    <option value="Pipe Repair">Pipe Repair</option>
+                    <option value="Bathroom Plumbing">Bathroom Plumbing</option>
+                    <option value="Kitchen Plumbing">Kitchen Plumbing</option>
+                    <option value="Water Heater Services">Water Heater Services</option>
+                    <option value="Commercial Plumbing">Commercial Plumbing</option>
+                    <option value="Emergency Plumbing">Emergency Plumbing</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="form-error-msg">Please select a service category.</div>
+                </div>
+
+                <!-- Property Type -->
+                <div class="form-group">
+                  <label for="property-type" class="form-label">Property Type <span class="required">*</span></label>
+                  <select id="property-type" class="form-control" required>
+                    <option value="">Select Property Type...</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Independent House">Independent House</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Office">Office</option>
+                    <option value="Shop">Shop</option>
+                    <option value="Restaurant">Restaurant</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="form-error-msg">Please select your property type.</div>
+                </div>
+
+                <!-- Property Location -->
+                <div class="form-group full-width">
+                  <label for="property-location" class="form-label">Property Location / Area <span class="required">*</span></label>
+                  <input type="text" id="property-location" class="form-control" placeholder="e.g. Banjara Hills, Hyderabad" required>
+                  <div class="form-error-msg">Please specify the property area or landmark.</div>
+                </div>
+
+                <!-- Issue Description -->
+                <div class="form-group full-width">
+                  <label for="issue-description" class="form-label">Plumbing Issue Description <span class="required">*</span></label>
+                  <textarea id="issue-description" class="form-control" placeholder="Describe what needs fixing, visible signs (water dripping, slow drainage, pipe rattle), and fixture details..." required></textarea>
+                  <div class="form-error-msg">Please provide a brief description (at least 10 characters).</div>
+                </div>
+
+                <!-- Preferred Date & Time -->
+                <div class="form-group">
+                  <label for="preferred-date" class="form-label">Preferred Date <span class="required">*</span></label>
+                  <input type="date" id="preferred-date" class="form-control" required>
+                  <div class="form-error-msg">Please select a preferred visit date.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="preferred-time" class="form-label">Preferred Time Slot <span class="required">*</span></label>
+                  <select id="preferred-time" class="form-control" required>
+                    <option value="">Select Time Window...</option>
+                    <option value="Morning (9 AM - 12 PM)">Morning (9:00 AM – 12:00 PM)</option>
+                    <option value="Afternoon (12 PM - 3 PM)">Afternoon (12:00 PM – 3:00 PM)</option>
+                    <option value="Late Afternoon (3 PM - 6 PM)">Late Afternoon (3:00 PM – 6:00 PM)</option>
+                  </select>
+                  <div class="form-error-msg">Please choose a preferred time slot.</div>
+                </div>
+
+                <!-- Photo Attachment UI Simulator -->
+                <div class="form-group full-width">
+                  <label class="form-label">Optional Photo Attachment (Demo Selector)</label>
+                  <div class="file-upload-zone" id="photo-dropzone">
+                    <input type="file" id="photo-attachment" class="file-input-hidden" accept="image/*">
+                    <svg class="file-upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                      <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    <div class="file-upload-text">Click or drag an image here to test photo selection</div>
+                    <div class="file-upload-hint">Frontend UI demonstration only. No files are uploaded or stored.</div>
+                  </div>
+
+                  <div id="photo-preview-pill" class="file-preview-pill">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span id="photo-file-name">filename.jpg</span>
+                    </div>
+                    <button id="remove-photo-btn" type="button" style="background: none; border: none; color: #D32F2F; cursor: pointer; font-size: 0.8rem; font-weight: bold;">Remove</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Action & Privacy Note -->
+              <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--gray-200);">
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Demo Request</button>
+                <p style="font-size: 0.78rem; text-align: center; color: var(--secondary-text); margin-top: 0.75rem;">
+                  Privacy Guarantee: This is a front-end simulation. No personal data or files are transmitted over any network or stored on any server.
+                </p>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Right: Fictional Demonstration Contact Information -->
+          <aside class="contact-info-panel reveal">
+            
+            <div class="info-card">
+              <span class="badge badge-orange" style="margin-bottom: 1rem;">Simulated Data</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Demonstration Contact Office</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 1.75rem;">
+                The contact information below is simulated dummy information created for website design illustration purposes.
+              </p>
+
+              <!-- Phone -->
+              <div class="info-item">
+                <div class="info-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="info-content">
+                  <h4>Demo Phone Number</h4>
+                  <p><a href="tel:0000000000" style="color: var(--plumbing-blue); font-weight: 700; font-size: 1.05rem;">0000000000</a></p>
+                  <span class="badge badge-demo">Demo number — no real answer</span>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="info-item">
+                <div class="info-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="info-content">
+                  <h4>Demonstration Email</h4>
+                  <p>demo@example.com</p>
+                  <span style="font-size: 0.75rem; color: #94A3B8;">Fictional inbox placeholder</span>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="info-item">
+                <div class="info-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="info-content">
+                  <h4>Demo Business Address</h4>
+                  <p>
+                    Plot No. 000, Demo Road,<br>
+                    Sample Area, Hyderabad,<br>
+                    Telangana – 000000.
+                  </p>
+                  <span class="badge badge-demo">Simulated address</span>
+                </div>
+              </div>
+
+              <!-- Working Hours -->
+              <div class="info-item">
+                <div class="info-icon-box" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="info-content">
+                  <h4>Demo Working Hours</h4>
+                  <p>Monday – Saturday<br><strong>9:00 AM – 6:00 PM</strong> (demo hours)</p>
+                  <span style="font-size: 0.75rem; color: #94A3B8;">Closed on simulated public holidays</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Booking Process Card -->
+            <div class="info-card" style="background-color: var(--navy-tint); border-color: rgba(37, 133, 197, 0.3);">
+              <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem;">How Requests Are Handled</h4>
+              <p style="font-size: 0.85rem; color: var(--secondary-navy); margin-bottom: 0.75rem;">
+                In an operational plumbing service platform:
+              </p>
+              <ul style="font-size: 0.82rem; color: var(--secondary-navy); line-height: 1.6; list-style: disc; padding-left: 1.25rem;">
+                <li>The customer service coordinator verifies address and access.</li>
+                <li>Parts requirements are estimated from submitted photos.</li>
+                <li>The visit is scheduled within a confirmed arrival window.</li>
+                <li>A technician performs diagnostics before quoting repairs.</li>
+              </ul>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Demo Success Modal (Pure Vanilla JS) -->
+  <div id="demo-success-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="success-dialog">
+      <div class="success-icon-wrap">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      
+      <span class="badge badge-orange" style="margin-bottom: 0.75rem;">DEMO CONFIRMATION</span>
+      
+      <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--primary-navy);">
+        Service Request Form Validated!
+      </h3>
+
+      <div class="disclaimer-card" style="background-color: #FFF8E1; border-left-color: #F57F17; text-align: left; margin: 1rem 0;">
+        <p style="color: #5D4037; font-weight: 700; font-size: 0.88rem; margin-bottom: 0.4rem;">
+          DEMO SERVICE REQUEST — NO REAL SERVICE BOOKING HAS BEEN CREATED.
+        </p>
+        <p style="color: #6D4C41; font-size: 0.82rem;">
+          Thank you, <span class="submitted-name" style="font-weight: bold;">Valued Customer</span>. All form fields have passed client-side validation successfully. This is a generic demonstration website; no technician has been scheduled and no data was saved or sent.
+        </p>
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--secondary-text); margin-bottom: 1.5rem;">
+        In a production deployment, this submission would trigger a webhook to your dispatch software or CRM, notifying both your field technicians and customer.
+      </p>
+
+      <button id="close-success-modal-btn" type="button" class="btn btn-primary" style="width: 100%;">
+        Return to Website
+      </button>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Plumbing Services Home">
+            <svg class="logo-symbol" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="22" fill="#2585C5" />
+              <path d="M24 9C24 9 15 19.5 15 26.5C15 31.7 19.03 36 24 36C28.97 36 33 31.7 33 26.5C33 19.5 24 9 24 9Z" fill="#FFFFFF"/>
+              <circle cx="24" cy="24" r="4" fill="#142B45"/>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name">PLUMBING SERVICES</span>
+              <span class="brand-sub">Professional Solutions</span>
+            </div>
+          </a>
+          <p>
+            Demonstrating modern web design, responsive performance, and lead-enquiry workflows for plumbing contractors and home-service businesses.
+          </p>
+          <span class="badge badge-demo">Generic Business Demo</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="services.html">Plumbing Services</a></li>
+            <li><a href="emergency.html">Emergency Plumbing</a></li>
+            <li><a href="about.html">About &amp; Team</a></li>
+            <li><a href="projects.html">Projects Showcase</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Capabilities</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#leak-repair">Leak Detection &amp; Repair</a></li>
+            <li><a href="services.html#drain-cleaning">Drain Cleaning</a></li>
+            <li><a href="services.html#pipe-repair">Pipe Installation</a></li>
+            <li><a href="services.html#bathroom-plumbing">Bathroom Plumbing</a></li>
+            <li><a href="services.html#water-heater">Water Heater Services</a></li>
+            <li><a href="services.html#commercial-plumbing">Commercial Plumbing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Demo Contact</h4>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <strong>Phone (Demo Only):</strong><br>
+              <a href="tel:0000000000">0000000000</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path></svg>
+            <div>
+              <strong>Email:</strong><br>
+              <span>demo@example.com</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <strong>Demo Hours:</strong><br>
+              <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-disclaimer">
+          <strong>DEMONSTRATION DISCLAIMER:</strong> This is an illustrative frontend website template designed for plumbing contractors. No real plumbing business is affiliated. Testimonials, prices, and bookings are simulated. Do not transmit actual confidential information.
+        </div>
+        <p>&copy; 2027 PLUMBING SERVICES. Demonstration Concept.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky Actions & Back-to-Top -->
+  <aside class="floating-actions" aria-label="Quick Actions">
+    <a href="contact.html" class="floating-enquire-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+      <span>Enquire Now</span>
+    </a>
+    <button class="back-to-top" aria-label="Back to top of page">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
